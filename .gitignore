@@ -1,0 +1,11 @@
+
+# SSL certificates and Let's Encrypt data
+nginx/letsencrypt/archive/
+nginx/letsencrypt/accounts/
+nginx/letsencrypt/live/
+
+# You might also want to exclude other sensitive files
+*.key
+*.pem
+*.crt
+EOF
