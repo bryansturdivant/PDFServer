@@ -37,3 +37,5 @@
 2025/11/24 19:26:38 [error] 195#195: *82 backend-nodejs could not be resolved (2: Server failure), client: 104.23.217.56, server: bsturdivant.com, request: "GET /wp-admin/setup-config.php HTTP/1.1", host: "bsturdivant.com"
 2025/11/24 20:05:52 [warn] 195#195: *43 using uninitialized "server" variable while logging request, client: 89.187.162.176, server: bsturdivant.com, request: "GET / HTTP/1.1", host: "www.bsturdivant.com"
 2025/11/24 21:20:58 [warn] 195#195: *182 using uninitialized "server" variable while logging request, client: 35.243.229.49, server: bsturdivant.com
+2025/11/25 01:35:36 [warn] 195#195: *132 using uninitialized "server" variable while logging request, client: 34.148.236.218, server: bsturdivant.com
+2025/11/25 11:53:32 [warn] 216#216: *3220 using uninitialized "server" variable while logging request, client: 104.197.132.77, server: bsturdivant.com
