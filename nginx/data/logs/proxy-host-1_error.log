@@ -39,3 +39,8 @@
 2025/11/24 21:20:58 [warn] 195#195: *182 using uninitialized "server" variable while logging request, client: 35.243.229.49, server: bsturdivant.com
 2025/11/25 01:35:36 [warn] 195#195: *132 using uninitialized "server" variable while logging request, client: 34.148.236.218, server: bsturdivant.com
 2025/11/25 11:53:32 [warn] 216#216: *3220 using uninitialized "server" variable while logging request, client: 104.197.132.77, server: bsturdivant.com
+2025/11/25 21:25:32 [warn] 212#212: *1665 using uninitialized "server" variable while logging request, client: 34.48.38.199, server: bsturdivant.com
+2025/11/26 00:38:32 [warn] 212#212: *1870 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com
+2025/11/26 09:32:41 [warn] 220#220: *7937 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com, request: "GET //wp-includes/wlwmanifest.xml HTTP/1.1", host: "bsturdivant.com"
+2025/11/26 09:32:45 [warn] 220#220: *7938 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com
+2025/11/26 12:32:33 [warn] 220#220: *9029 using uninitialized "server" variable while logging request, client: 136.117.121.169, server: bsturdivant.com

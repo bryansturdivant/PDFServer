@@ -7,7 +7,7 @@ const PORT = 1991;
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Routing
-const routing = require('./routes/auth');
+const routing = require('./modules/auth');
 app.use('/', routing);
 
 // Start server
