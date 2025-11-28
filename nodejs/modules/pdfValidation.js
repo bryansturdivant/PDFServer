@@ -1,5 +1,5 @@
 
-const routes = require('./auth');
+//const routes = require('./auth');
 const path = require('path');
 const fs = require('fs').promises;
 

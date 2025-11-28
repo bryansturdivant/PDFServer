@@ -44,3 +44,18 @@
 2025/11/26 09:32:41 [warn] 220#220: *7937 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com, request: "GET //wp-includes/wlwmanifest.xml HTTP/1.1", host: "bsturdivant.com"
 2025/11/26 09:32:45 [warn] 220#220: *7938 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com
 2025/11/26 12:32:33 [warn] 220#220: *9029 using uninitialized "server" variable while logging request, client: 136.117.121.169, server: bsturdivant.com
+2025/11/26 20:43:32 [warn] 195#195: *48 using uninitialized "server" variable while logging request, client: 34.138.53.77, server: bsturdivant.com
+2025/11/26 22:01:57 [warn] 195#195: *91 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com
+2025/11/26 22:52:32 [warn] 195#195: *129 using uninitialized "server" variable while logging request, client: 185.189.114.120, server: bsturdivant.com, request: "GET / HTTP/1.1", host: "www.bsturdivant.com"
+2025/11/27 02:36:44 [warn] 212#212: *709 using uninitialized "server" variable while logging request, client: 45.132.194.56, server: bsturdivant.com, request: "GET / HTTP/1.1", host: "bsturdivant.com"
+2025/11/27 02:36:44 [warn] 212#212: *710 using uninitialized "server" variable while logging request, client: 149.34.242.233, server: bsturdivant.com, request: "GET /favicon.ico HTTP/1.1", host: "bsturdivant.com"
+2025/11/27 09:56:48 [warn] 216#216: *10304 using uninitialized "server" variable while logging request, client: 129.212.231.54, server: bsturdivant.com
+2025/11/27 16:34:42 [warn] 220#220: *11597 using uninitialized "server" variable while logging request, client: 34.82.42.112, server: bsturdivant.com
+2025/11/27 17:19:07 [warn] 220#220: *11620 using uninitialized "server" variable while logging request, client: 172.236.154.62, server: bsturdivant.com
+2025/11/27 21:50:51 [warn] 224#224: *11788 using uninitialized "server" variable while logging request, client: 34.19.12.5, server: bsturdivant.com
+2025/11/28 01:31:03 [warn] 224#224: *12921 using uninitialized "server" variable while logging request, client: 45.154.98.144, server: bsturdivant.com
+2025/11/28 06:36:59 [warn] 228#228: *13643 using uninitialized "server" variable while logging request, client: 35.186.170.191, server: bsturdivant.com
+2025/11/28 09:54:18 [warn] 232#232: *13835 using uninitialized "server" variable while logging request, client: 136.107.101.186, server: bsturdivant.com
+2025/11/28 13:05:32 [warn] 232#232: *14611 using uninitialized "server" variable while logging request, client: 91.90.124.158, server: bsturdivant.com, request: "GET / HTTP/1.1", host: "bsturdivant.com"
+2025/11/28 13:05:32 [warn] 232#232: *14612 using uninitialized "server" variable while logging request, client: 173.239.217.49, server: bsturdivant.com, request: "GET /favicon.ico HTTP/1.1", host: "bsturdivant.com"
+2025/11/28 18:00:26 [warn] 236#236: *23424 using uninitialized "server" variable while logging request, client: 152.42.202.148, server: bsturdivant.com
