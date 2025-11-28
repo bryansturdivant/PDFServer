@@ -8,4 +8,4 @@ nginx/letsencrypt/live/
 *.key
 *.pem
 *.crt
-EOF
+EOFnode_modules/
