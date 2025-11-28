@@ -1,8 +1,11 @@
+//This is my routing module 
+
+
 const express = require('express');
 const path = require('path');
 const router = express.Router();
 const pdfValidation = require('./pdfValidation');//the function we will be calling from pdfValidation.js
-const pdfDiscovery = require('./pdfDiscovery');
+const pdfDiscovery = require('./pdfDiscovery');//function from pdfDiscovery
 
 
 
@@ -11,12 +14,14 @@ router.use(express.static(path.join(__dirname, '../public')));
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
-// NEW ROUTE - API endpoint to get list of PDFs
+
+
+//API endpoint to get list of PDFs
 router.get('/api/pdfs', (req, res) => {
     const pdfList = pdfDiscovery.getPDFList();
     res.json(pdfList);
 });
-
+//serving the pdfs 
 router.get('/pdfs/:filename', async (req,res) => {
     const filename = req.params.filename;
 
@@ -34,7 +39,7 @@ router.get('/pdfs/:filename', async (req,res) => {
     }
 
 });
-
+//404 error page
 router.use((req, res) => {
     res.status(404).send('Page not found');
 });

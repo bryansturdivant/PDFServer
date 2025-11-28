@@ -20,28 +20,32 @@
 
     </div>
 </div>
+<!--Script for loading the pdfs-->
 <script>
     async function loadPDFs() {
         try {
-            const response = await fetch('/api/pdfs');
-            const pdfs = await response.json();
+            // Fetch the list of PDF filenames
+            const pdfResponse = await fetch('/api/pdfs');
+            const pdfFilenames = await pdfResponse.json();
+            
+            // Fetch the metadata
+            const metadataResponse = await fetch('/pdfs/metadata.json');
+            const metadata = await metadataResponse.json();
             
             const container = document.querySelector('.pdf-list');
-            container.innerHTML = ''; // Clear any existing content
+            container.innerHTML = '';
             
-            pdfs.forEach(filename => {
+            pdfFilenames.forEach(filename => {
                 const div = document.createElement('div');
                 div.className = 'pdf-item';
                 
-                // Extract a nice name from filename
-                const displayName = filename
-                    .replace('.pdf', '')
-                    .replace(/-/g, ' ')
-                    .replace(/\b\w/g, l => l.toUpperCase());
+                // Get title and description from metadata, or use defaults
+                const title = metadata[filename]?.title || filename.replace('.pdf', '');
+                const description = metadata[filename]?.description || 'No description available';
                 
                 div.innerHTML = `
-                    <h3>${displayName}</h3>
-                    <p>Study guide for ${displayName.toLowerCase()}</p>
+                    <h3>${title}</h3>
+                    <p>${description}</p>
                     <a class="pdf-link" href="/pdfs/${filename}">View PDF</a>
                 `;
                 

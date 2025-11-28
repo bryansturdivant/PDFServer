@@ -1,0 +1,18 @@
+{
+    "data-structures.pdf":{
+        "title": "Data Structures Guide",
+        "description": "A study guide about Data Structures"
+    },
+    "computer-networks.pdf":{
+        "title": "Computer Networks Guide",
+        "description": "A study guide for Computer Networks"
+    },
+    "operating-systems.pdf":{
+        "title": "Operating Systems Guide",
+        "description":"A study guide for Operating Systems"
+    },
+    "cybersecurity.pdf":{
+        "title": "Cybersecurity Guide",
+        "description": "A study guide for Cybersecurity"
+    }
+}

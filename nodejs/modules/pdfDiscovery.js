@@ -1,3 +1,5 @@
+//pdf discovery module for finding pdfs in the '/pdfs' folder 
+
 const path = require('path');
 const fs = require('fs');//nodes built in file system module - lets me read, write, and generally ahve access to files functions
 
