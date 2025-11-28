@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const router = express.Router();
 const pdfValidation = require('./pdfValidation');//the function we will be calling from pdfValidation.js
-
+const pdfDiscovery = require('./pdfDiscovery');
 
 
 
@@ -11,7 +11,11 @@ router.use(express.static(path.join(__dirname, '../public')));
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
-
+// NEW ROUTE - API endpoint to get list of PDFs
+router.get('/api/pdfs', (req, res) => {
+    const pdfList = pdfDiscovery.getPDFList();
+    res.json(pdfList);
+});
 
 router.get('/pdfs/:filename', async (req,res) => {
     const filename = req.params.filename;

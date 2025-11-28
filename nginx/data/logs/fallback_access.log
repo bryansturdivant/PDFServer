@@ -3295,3 +3295,8 @@
 [28/Nov/2025:20:04:39 +0000] 400 - - http localhost "-" [Client 20.29.23.166] [Length 154] [Gzip -] "-" "-"
 [28/Nov/2025:20:52:00 +0000] 200 - GET http 143.198.9.242 "/" [Client 204.76.203.212] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" "-"
 [28/Nov/2025:20:53:05 +0000] 404 - GET http ip-api.com "/json/" [Client 45.135.193.9] [Length 122] [Gzip 1.35] "Go-http-client/1.1" "-"
+[28/Nov/2025:20:57:35 +0000] 400 - GET http 143.198.9.242 "/" [Client 43.128.67.187] [Length 252] [Gzip -] "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1" "-"
+[28/Nov/2025:20:58:00 +0000] 404 - GET http 143.198.9.242 "/.env" [Client 78.153.140.39] [Length 183] [Gzip 3.21] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+[28/Nov/2025:20:58:00 +0000] 405 - POST http 143.198.9.242 "/" [Client 78.153.140.39] [Length 556] [Gzip -] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36" "-"
+[28/Nov/2025:20:58:50 +0000] 400 - GET http 143.198.9.242 "/manager/text/list" [Client 40.124.175.184] [Length 252] [Gzip -] "Mozilla/5.0 zgrab/0.x" "-"
+[28/Nov/2025:21:15:35 +0000] 200 - GET http 143.198.9.242 "/" [Client 89.248.172.33] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" "-"

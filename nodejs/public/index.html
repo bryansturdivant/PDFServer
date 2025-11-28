@@ -18,26 +18,43 @@
 
     <div class="pdf-list">
 
-        <div class="pdf-item">
-            <h3>Data Structures Study Guide</h3>
-            <p>A detailed guide covering trees, graphs, hash tables, heaps, and common algorithms used in computer science courses.</p>
-            <a class="pdf-link" href="/pdfs/data-structures.pdf">View PDF</a>
-        </div>
-
-        <div class="pdf-item">
-            <h3>Operating Systems Study Guide</h3>
-            <p>Summary of CPU scheduling, processes/threads, memory management, virtual memory, and I/O systems.</p>
-            <a class="pdf-link" href="/pdfs/operating-systems.pdf">View PDF</a>
-        </div>
-
-        <div class="pdf-item">
-            <h3>Computer Networks Study Guide</h3>
-            <p>An overview of networking layers, protocols, routing, socket programming basics, and network security concepts.</p>
-            <a class="pdf-link" href="/pdfs/computer-networks.pdf">View PDF</a>
-        </div>
-
     </div>
 </div>
-
+<script>
+    async function loadPDFs() {
+        try {
+            const response = await fetch('/api/pdfs');
+            const pdfs = await response.json();
+            
+            const container = document.querySelector('.pdf-list');
+            container.innerHTML = ''; // Clear any existing content
+            
+            pdfs.forEach(filename => {
+                const div = document.createElement('div');
+                div.className = 'pdf-item';
+                
+                // Extract a nice name from filename
+                const displayName = filename
+                    .replace('.pdf', '')
+                    .replace(/-/g, ' ')
+                    .replace(/\b\w/g, l => l.toUpperCase());
+                
+                div.innerHTML = `
+                    <h3>${displayName}</h3>
+                    <p>Study guide for ${displayName.toLowerCase()}</p>
+                    <a class="pdf-link" href="/pdfs/${filename}">View PDF</a>
+                `;
+                
+                container.appendChild(div);
+            });
+        } catch (error) {
+            console.error('Failed to load PDFs:', error);
+            document.querySelector('.pdf-list').innerHTML = 
+                '<p>Error loading study guides. Please refresh the page.</p>';
+        }
+    }
+    
+    loadPDFs();
+</script>
 </body>
 </html>
